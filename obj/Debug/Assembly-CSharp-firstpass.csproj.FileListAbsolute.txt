@@ -1,0 +1,11 @@
+C:\Users\brade_000\Documents\Moons of Jupiter1\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\brade_000\Documents\Moons of Jupiter1\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\brade_000\Documents\Moons of Jupiter1\Temp\bin\Debug\UnityEditor.dll
+C:\Users\brade_000\Documents\Moons of Jupiter1\Temp\bin\Debug\UnityEngine.dll
+C:\Users\brade_000\Documents\Moons of Jupiter1\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\brade_000\Documents\Moons of Jupiter1\Temp\bin\Debug\nunit.framework.dll
+C:\Users\brade_000\Documents\Moons of Jupiter1\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\brade_000\Documents\Moons of Jupiter1\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\brade_000\Documents\Moons of Jupiter1\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\brade_000\Documents\Moons of Jupiter1\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\brade_000\Documents\Moons of Jupiter1\obj\Debug\Assembly-CSharp-firstpass.pdb
