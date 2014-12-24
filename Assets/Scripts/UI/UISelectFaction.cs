@@ -37,7 +37,7 @@ public class UISelectFaction : MonoBehaviour {
             button.selectFaction = this;
 
         }
-        //grid.Reposition();
+        grid.Reposition();
         yield return null;
     }
 

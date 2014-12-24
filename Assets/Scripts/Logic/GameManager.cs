@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour {
 
     float gameDay;
 
+    public UILabel timeLabel;
+
     public bool waitOnUser = false;
 
     bool ready;
@@ -95,6 +97,7 @@ public class GameManager : MonoBehaviour {
             gameDay++;
             gameHour = 0;
         }
+        timeLabel.text = "Day " + (gameDay + 1) + " Time " + gameHour + ":" + gameTime.ToString("##.#");
         
     }
 

@@ -58,6 +58,7 @@ public class UISelectCharacter : MonoBehaviour {
         }
         for (int i = 0; i < currChar.characteristics.Count; i++)
         {
+            Debug.Log("Count of Chars: " + currChar.characteristics.Count);
             GameObject go = NGUITools.AddChild(gridTwo.gameObject, prefabTooltipCharacter);
             UITooltipCharacteristic tooltip = go.GetComponent<UITooltipCharacteristic>();
             tooltip.characteristic = currChar.characteristics[i];            
@@ -72,6 +73,7 @@ public class UISelectCharacter : MonoBehaviour {
     {
         currChar = chara.character;
         currButton = chara;
+        Debug.Log("Current Character Speciality: " + currChar.Speciality);
         StartCoroutine(LoadCharacteristics());
     }
 
@@ -81,6 +83,7 @@ public class UISelectCharacter : MonoBehaviour {
         Character newChar = CharacterGenerator.GenerateCharacter(false, currChar.Speciality);
         playerFaction.characters[currButton.charId] = newChar;
         currChar = newChar;
+        Debug.Log("Current Character Speciality: " + currChar.Speciality + "!!!");
         StartCoroutine(LoadCharacteristics());
         StartCoroutine(LoadCharacters());
     }

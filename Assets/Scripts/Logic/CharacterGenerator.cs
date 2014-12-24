@@ -15,7 +15,7 @@ public static class CharacterGenerator {
         if (isLeader)
             totalPoints = Random.Range(60, 80);       
         int specialityPoints = totalPoints / 2;
-        totalPoints = totalPoints = specialityPoints;
+        totalPoints = totalPoints - specialityPoints;
         List<Characteristic> chars = newChar.characteristics;
         List<Characteristic> special = new List<Characteristic>();
         switch (speciality)
@@ -69,6 +69,7 @@ public static class CharacterGenerator {
 		chars.AddRange (special);
 		newChar.characteristics = chars;
         newChar.characterName = NameGenerator.Instance.getName();
+        newChar.Speciality = speciality;
         return newChar;
     }
 
