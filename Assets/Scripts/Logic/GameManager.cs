@@ -79,20 +79,23 @@ public class GameManager : MonoBehaviour {
                     faction.currQuadrant = temp;
             }
             //Mission Time
-            if (gameHour == 8)
+            if (gameHour == 2)
             {
                 List<Mission> m = MissionManager.GenerateMissions(playerFaction);
                 if (m == null)
                     Debug.Log("No Mission");
                 else
                 {
-                    foreach (Mission miss in m)
+                    foreach (Mission miss in m){
                         miss.print();
+						UIManager.Instance.ShowMission(miss);
+					}
+
                     //Herro
                 }
             }
         }
-        if (gameHour >= 24)
+        if (gameHour >= 3)
         {
             gameDay++;
             gameHour = 0;
@@ -113,7 +116,7 @@ public class GameManager : MonoBehaviour {
 
     public void MissionSent(Mission m)
     {
-        UIManager.Instance.ShowMission("New Mission", m);
+        UIManager.Instance.ShowMission(m);
         waitOnUser = true;
     }
 

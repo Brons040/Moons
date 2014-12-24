@@ -215,6 +215,7 @@
      <Compile Include="Assets\Scripts\UI\UIButtonCharacter.cs" />
      <Compile Include="Assets\Scripts\UI\UIButtonFaction.cs" />
      <Compile Include="Assets\Scripts\UI\UIManager.cs" />
+     <Compile Include="Assets\Scripts\UI\UIMenuMission.cs" />
      <Compile Include="Assets\Scripts\UI\UISelectCharacter.cs" />
      <Compile Include="Assets\Scripts\UI\UISelectFaction.cs" />
      <Compile Include="Assets\Scripts\UI\UITooltipCharacteristic.cs" />

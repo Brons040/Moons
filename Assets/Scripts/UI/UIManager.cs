@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour {
     public GameObject prefabCharacter;
     public GameObject prefabPlanet;
     public GameObject prefabFactionRelationship;
+	//public GameObject prefabMissionMenu;
+	public UIMenuMission missionMenu;
 
     public enum UIState
     {
@@ -35,6 +37,12 @@ public class UIManager : MonoBehaviour {
 	
 	}
 
+	void Update(){
+		if (Input.GetKeyDown (KeyCode.Mouse1)) {
+			Debug.Log ("Eat a dick ms. saddat");
+		}
+	}
+
     public void NewGame()
     {
         //FactionStorage.Instance.MakeFactions();
@@ -51,13 +59,16 @@ public class UIManager : MonoBehaviour {
 
     }
 
-    public void ShowMission(string message, Mission mission)
+    public void ShowMission(Mission mission)
     {
-
+		//prefabMissionMenu.gameObject.SetActive (true);
+		missionMenu.gameObject.SetActive (true);
+		missionMenu.SetLabels (mission);
     }
 
     public void SetLocalWidgetActive(GameObject go)
     {
         go.SetActive(true);
+
     }
 }
